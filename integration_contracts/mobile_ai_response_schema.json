@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Mobile AI Response",
+  "type": "object",
+  "required": ["feature", "status", "result"],
+  "properties": {
+    "feature": {
+      "type": "string",
+      "enum": ["plate_ocr", "voice_sos", "decision_engine"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["success", "error"]
+    },
+    "result": {
+      "type": "object"
+    },
+    "message": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

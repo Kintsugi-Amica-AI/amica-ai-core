@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Backend SOS Payload",
+  "type": "object",
+  "required": ["userId", "triggerType", "createdAt"],
+  "properties": {
+    "userId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "triggerType": {
+      "type": "string",
+      "enum": [
+        "timer_expired_no_response",
+        "secret_phrase_detected",
+        "manual_sos_pressed"
+      ]
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "longitude": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        }
+      },
+      "required": ["latitude", "longitude"],
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

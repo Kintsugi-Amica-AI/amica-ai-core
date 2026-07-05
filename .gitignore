@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Local data and secrets
+.env
+.env.*
+*.wav
+*.mp3
+*.mp4
+*.jpg
+*.jpeg
+*.png
+*.onnx
+*.pt
+*.pth
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

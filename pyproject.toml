@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "amica-ai-core"
+version = "0.1.0"
+description = "Prototype AI modules for Amica safety features."
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = [
+  "plate_ocr/tests",
+  "voice_sos/tests",
+  "decision_engine/tests"
+]
+pythonpath = ["."]
