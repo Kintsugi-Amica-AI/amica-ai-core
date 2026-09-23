@@ -1,0 +1,16 @@
+# Training and export only; the app never needs these.
+# Ultralytics is AGPL-3.0 (see amica-mobile-app/assets/models/README.md).
+ultralytics>=8.3
+roboflow>=1.1
+onnx>=1.16
+onnxruntime  # Ultralytics checks the ONNX export with it
+onnxslim
+onnx2tf>=1.26
+ai-edge-litert  # onnx2tf imports its interpreter
+tensorflow-cpu>=2.16
+tf_keras
+sng4onnx
+onnx_graphsurgeon
+psutil
+# Optional: OCR proxy for evaluate.py --ocr easyocr
+# easyocr

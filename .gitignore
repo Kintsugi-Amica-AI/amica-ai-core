@@ -32,3 +32,5 @@ build/
 Thumbs.db
 .idea/
 .vscode/
+
+/notebooks/results/

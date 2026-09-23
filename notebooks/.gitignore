@@ -1,0 +1,7 @@
+# Outputs when the training notebook runs locally.
+work/
+runs/
+amica_models/
+amica_models.zip
+yolov8n.pt
+*.executed.ipynb

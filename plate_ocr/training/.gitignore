@@ -1,0 +1,9 @@
+# Large or regenerable training outputs.
+datasets/
+downloads/
+runs/
+export/
+*.pt
+*.onnx
+evaluation.csv
+calibration_image_sample_data_*.npy
